@@ -9,18 +9,17 @@ const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const errorCatcher = [];
   // USERNAME
-  if (username.value === " " || username.value === null) {
-    errMessage.innerText = "please Enter Username.";
-    username.classList.add("errorStyle");
-    console.log(username);
-  } else if (username.value.length < 6) {
-    errMessage.innerText = "username must be more than six(6) characters";
-    username.classList.add("errorStyle");
-  } else if (username.value.length > 6) {
-    username.classList.remove("errorStyle");
-  }
+  // if (username.value === " " || username.value === null) {
+  //   errMessage.innerText = "please Enter Username.";
+  //   username.classList.add("errorStyle");
+  //   console.log(username);
+  // } else if (username.value.length < 6) {
+  //   errMessage.innerText = "username must be more than six(6) characters";
+  //   username.classList.add("errorStyle");
+  // } else if (username.value.length > 6) {
+  //   username.classList.remove("errorStyle");
+  // }
   // PASSWORD
   if (password.value === " " || password.value === null) {
     errMessage.innerText = "please Enter Password.";
