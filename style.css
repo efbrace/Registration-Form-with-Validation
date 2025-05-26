@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 40px;
+  background: linear-gradient(
+    319deg,
+    rgba(197, 227, 240, 1) 0%,
+    rgba(62, 203, 250, 1) 0%,
+    rgba(87, 177, 199, 1) 28%,
+    rgba(83, 91, 237, 1) 100%
+  );
+}
+h1 {
+  text-align: center;
+  margin: 1rem auto;
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+  width: 60%;
+}
+#errMessage {
+  text-align: center;
+  color: crimson;
+  font-weight: 200;
+}
+#success {
+  text-align: center;
+  color: rgb(57, 179, 1);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.errorStyle {
+  border: 1px solid crimson;
+}
+form {
+  background-color: white;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.281);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+.err-message {
+  color: crimson;
+  text-align: center;
+}
+
+form label {
+  color: rgb(5, 0, 41);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(11, 1, 90);
+  outline: none;
+  transition: 0.1s ease-in;
+}
+input:hover,
+select:hover {
+  background-color: rgb(242, 240, 255);
+}
+input:focus,
+select:focus {
+  border: 2px solid rgb(157, 146, 238);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #724caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}

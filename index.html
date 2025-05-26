@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=for, initial-scale=1.0" />
+    <title>Registration Form with Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/main.js"></script>
+  </head>
+  <body>
+    <h1>Registration Form with Validation and DOM Manipulation.</h1>
+
+    <form id="form">
+      <p id="errMessage">Password must be at least 8 characters.</p>
+
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required class="" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+  </body>
+</html>
