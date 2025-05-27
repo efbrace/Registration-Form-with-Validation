@@ -76,7 +76,7 @@ select:hover {
 }
 input:focus,
 select:focus {
-  border: 2px solid rgb(157, 146, 238);
+  border: 1px solid rgb(157, 146, 238);
 }
 
 button {
